@@ -49,7 +49,33 @@ namespace Quiz
         }
         public static int Indexini_bul(string metin, string kisim)
         {
-
+            char[] metinArr = metin.ToCharArray();
+            char[] kisimArr = kisim.ToCharArray();
+            int sayi = 0;
+            int index = 0;
+            bool varmi = false;
+            for(int i = 0; i < Uzunluk(metin); i++)
+            {
+                if (sayi == Uzunluk(kisim))
+                {
+                    break;
+                }
+                if(metinArr[i] == kisim[sayi])
+                {
+                    sayi++;
+                    if (varmi == false)
+                    {
+                        index = i;
+                        varmi = true;
+                    }                  
+                }
+                else
+                {
+                    index = 0;
+                    varmi = false;
+                }
+            }
+            return index;
         }
     }
 }
