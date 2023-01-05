@@ -10,7 +10,7 @@ namespace Quiz
     {
         static void Main(string[] args)
         {
-            string onemli = "pasif batın";
+            int salam;
         }
     }
 }
