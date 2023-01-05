@@ -10,7 +10,7 @@ namespace Quiz
     {
         static void Main(string[] args)
         {
-            int salam;
+            int sucuk;
         }
     }
 }
